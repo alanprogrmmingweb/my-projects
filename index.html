@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styl.css">
+  <title>Welcome to Sharya</title>
+  <style>
+  body{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    height:100px;
+    width:100px;
+    margin:0;
+    overflow:hidden;
+    background-attachment:fixed;
+    background-image:url(newyork-centeral.jpg);
+    position:relative;
+  }
+  #WTS{
+    color:#fff;
+    position:absolute;
+    top:0px;
+    left:40px;
+    display:inline-block;
+    white-space:nowrap;
+    text-shadow:0px 0px 0px #000;
+  }
+  #username{
+    color:#fff;
+    position:absolute;
+    top:0px;
+    left:40px;
+  }
+  .line{
+    width:100vw;
+    height:2px;
+    background-color:#fff;
+    overflow:hidden;
+    position:relative;
+    top:20px;
+    left:130px;
+  }
+  .circle{
+    position:absolute;
+    top:165px;
+    left:140px;
+    width:20vw;
+    height:60px;
+    background-color:#0006;
+    box-shadow:0px 0px 0px black;
+    transform:scale(3);
+    overflow:hidden;
+    border-radius:4px;
+  }
+  input[id="txt"]{
+    position:absolute;
+    top:135px;
+    left:80px;
+    border-radius:40px;
+    border:2px solid #fff;
+    input
+  }
+ input[id="psw"]{
+    position:absolute;
+    top:190px;
+    left:80px;
+    border-radius:40px;
+    border:2px solid #fff;
+    input
+ }
+  input[id="date"]{
+    position:absolute;
+    top:245px;
+    left:80px;
+    border-radius:40px;
+    border:2px solid #fff;
+    input
+  }
+  label[id="txt"]{
+    position:absolute;
+    top:100px;
+    left:140px;
+    font-size:8px;
+    color:#fff;
+  }
+  label[id="psw"]{
+    position:absolute;
+    top:155px;
+    left:140px;
+    font-size:8px;
+    color:#fff;
+  }
+  label[id="date"]{
+    position:absolute;
+    top:210px;
+    left:160px;
+    font-size:8px;
+    color:#fff;
+  }
+  input::placeholder{
+    position:absolute;
+    top:0px;
+    left:0px;
+    color:#999;
+    }
+  .glass{
+    background:rgba(000,000,000,.7);
+  backdrop-filter:blur(5px);
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:0vw;
+  left:0vh;
+  }
+  #password{
+    color:#fff;
+    position:absolute;
+    top:10vw;
+    left:0vh;
+  }
+  </style>
+</head>
+  <body>
+     <div class="glass"></div>
+    <h1 id="WTS">Welcome to Sharya</h1>
+    <div class="line"></div>
+    <div class="circle"></div>
+    <form>
+      <label id="txt"><h1 id="txt">username</h1></label>
+    <input id="txt" type="text" name="text" placeholder="enter your username">
+      <label id="psw"><h1 id="psw">password</h1></label>
+      <input id="psw"type="password" name="password" placeholder="enter your password">
+      <label id="date"><h1 id="date">date</h1></label>
+      <input id="date"type="date" name="date" placeholder="enter your date">
+      </form>
+  </body>
+</html>
